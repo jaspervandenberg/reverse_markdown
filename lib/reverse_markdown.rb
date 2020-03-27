@@ -45,7 +45,7 @@ module ReverseMarkdown
       root or return ''
 
       result = ReverseMarkdown::Converters.lookup(root.name).convert(root)
-      #cleaner.tidy(result)
+      cleaner.tidy(result)
     end
   end
 
