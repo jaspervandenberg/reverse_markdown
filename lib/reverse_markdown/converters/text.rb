@@ -40,7 +40,8 @@ module ReverseMarkdown
       end
 
       def preserve_tags(text)
-        text.gsub(/[<>]/, '>' => '\>', '<' => '\<')
+        text
+        # text.gsub(/[<>]/, '>' => '\>', '<' => '\<')
       end
 
       def remove_border_newlines(text)
